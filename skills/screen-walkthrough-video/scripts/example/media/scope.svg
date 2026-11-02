@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="white"/>
+  <g font-family="Hiragino Sans, Noto Sans JP, sans-serif" fill="#20252c">
+    <text x="90" y="155" font-size="34" font-weight="600">メンション候補の出どころ</text>
+    <g id="own">
+      <rect x="100" y="235" width="350" height="130" rx="8" fill="#f5f6f7" stroke="#c9ced5"/>
+      <text x="135" y="290" font-size="27">自分のデータベース</text>
+      <text x="135" y="330" font-size="22" fill="#636b76">売上レポート</text>
+      <path d="M450 300 L695 370" fill="none" stroke="#89919d" stroke-width="3"/>
+    </g>
+    <g id="shared">
+      <rect x="100" y="405" width="350" height="130" rx="8" fill="#f5f6f7" stroke="#c9ced5"/>
+      <text x="135" y="460" font-size="27">共有されたデータベース</text>
+      <text x="135" y="500" font-size="22" fill="#636b76">売上集計（田中さん）</text>
+      <path d="M450 470 L695 395" fill="none" stroke="#89919d" stroke-width="3"/>
+    </g>
+    <rect x="700" y="305" width="430" height="160" rx="8" fill="#f5f6f7" stroke="#c9ced5"/>
+    <text x="745" y="370" font-size="30">@ の候補</text>
+    <text x="745" y="414" font-size="24" fill="#636b76">閲覧できるものを表示</text>
+  </g>
+</svg>

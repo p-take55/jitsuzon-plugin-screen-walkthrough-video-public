@@ -1,0 +1,142 @@
+{
+  "size": [
+    1280,
+    720
+  ],
+  "title": "@ でデータベースをメンションする",
+  "subtitle": "架空の画面を使った確認動画のサンプル",
+  "checks": [
+    "@ を入力すると、共有されたデータベースも候補に出る",
+    "候補を選ぶとチップになり、入力欄の高さが揃う",
+    "自分と共有のデータベースが同じ候補へ集まる"
+  ],
+  "scenes": [
+    {
+      "type": "title"
+    },
+    {
+      "type": "changes",
+      "items": [
+        {
+          "what": "共有されたデータベースの候補と、選択後のチップ表示を追加しました。",
+          "why": "共有されたデータベースが候補に出ないことと、選んだ後の表示を確かめたいという要望"
+        }
+      ]
+    },
+    {
+      "type": "shot",
+      "image": "frames/01.png",
+      "caption": "入力欄に @ を入力する",
+      "cursor": {
+        "from": [
+          1120,
+          360
+        ],
+        "to": [
+          408,
+          568
+        ]
+      },
+      "click": [
+        408,
+        568
+      ],
+      "zoom": {
+        "center": [
+          620,
+          480
+        ],
+        "scale": 1.3
+      },
+      "overlays": {
+        "type": {
+          "at": [
+            412,
+            554
+          ],
+          "text": "@売上"
+        }
+      },
+      "hold": 2.4
+    },
+    {
+      "type": "shot",
+      "image": "frames/02.png",
+      "caption": "共有されたデータベースも候補に出る",
+      "cursor": {
+        "to": [
+          545,
+          440
+        ]
+      },
+      "zoom": {
+        "center": [
+          620,
+          480
+        ],
+        "scale": 1.3
+      },
+      "highlight": [
+        370,
+        338,
+        1074,
+        493
+      ],
+      "check": 1,
+      "hold": 2.8
+    },
+    {
+      "type": "shot",
+      "image": "frames/03.png",
+      "caption": "選ぶと入力欄にチップが入る",
+      "cursor": {
+        "to": [
+          540,
+          568
+        ]
+      },
+      "click": [
+        540,
+        568
+      ],
+      "highlight": [
+        370,
+        531,
+        1080,
+        601
+      ],
+      "check": 2,
+      "hold": 2.6
+    },
+    {
+      "type": "clip",
+      "src": "media/interaction.mp4",
+      "trim": [
+        0.3,
+        2.7
+      ],
+      "speed": 1,
+      "caption": "クリップ素材の再生例（テスト映像）",
+      "check": 2
+    },
+    {
+      "type": "diagram",
+      "svg": "media/scope.svg",
+      "caption": "閲覧できるデータベースを候補に集める",
+      "reveal": [
+        "#own",
+        "#shared"
+      ],
+      "check": 3,
+      "hold": 3.4
+    },
+    {
+      "type": "end",
+      "results": [
+        "ok",
+        "unsure",
+        "ng"
+      ]
+    }
+  ]
+}

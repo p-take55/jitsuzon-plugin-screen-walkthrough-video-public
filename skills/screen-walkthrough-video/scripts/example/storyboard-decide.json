@@ -1,0 +1,93 @@
+{
+  "size": [
+    1280,
+    720
+  ],
+  "title": "共有されたデータベースも候補に含めるか",
+  "subtitle": "今の状態 → A → B → 推奨（架空の画面で比較）",
+  "options": [
+    {
+      "id": "own",
+      "label": "自分のものだけ"
+    },
+    {
+      "id": "all",
+      "label": "共有も含める",
+      "recommended": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "title"
+    },
+    {
+      "type": "shot",
+      "image": "frames/01.png",
+      "caption": "今：入力欄に @ を打って候補を開く",
+      "cursor": {
+        "from": [
+          1120,
+          360
+        ],
+        "to": [
+          408,
+          568
+        ]
+      },
+      "click": [
+        408,
+        568
+      ],
+      "hold": 2.4
+    },
+    {
+      "type": "diagram",
+      "svg": "media/scope.svg",
+      "caption": "A：候補を自分のデータベースに絞る",
+      "reveal": [
+        "#own"
+      ],
+      "highlight": [
+        90,
+        220,
+        470,
+        380
+      ],
+      "option": "own",
+      "hold": 3
+    },
+    {
+      "type": "shot",
+      "image": "frames/02.png",
+      "caption": "B：閲覧できる共有データベースも表示する",
+      "highlight": [
+        370,
+        338,
+        1074,
+        493
+      ],
+      "option": "all",
+      "hold": 3
+    },
+    {
+      "type": "diagram",
+      "svg": "media/scope.svg",
+      "caption": "推奨：閲覧権限を確認し、共有も候補に含める",
+      "reveal": [
+        "#own",
+        "#shared"
+      ],
+      "option": "all",
+      "hold": 3.2
+    },
+    {
+      "type": "end"
+    }
+  ],
+  "changes": [
+    {
+      "what": "自分のものだけの場合と、共有も含めた場合を比較できるようにしました。",
+      "why": "共有されたデータベースも候補に含めた場合の見え方を知りたいという要望"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+node_modules/
+# pnpm 11 が install のたびに書く。設定は render.mjs の引数で渡す
+pnpm-workspace.yaml

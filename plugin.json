@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "screen-walkthrough-video",
+  "version": "1.0.0",
+  "description": "画面操作の確認動画を Remotion で編集して書き出す。"
+}
